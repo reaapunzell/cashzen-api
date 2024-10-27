@@ -1,7 +1,7 @@
 import "dotenv/config"
 import express from 'express';
 import cors from 'cors';
-import { dbConnect } from "../db.js";
+import { dbConnect } from "./db.js";
 
 const app = express();
 const PORT = process.env.SERVER_PORT || 3000;

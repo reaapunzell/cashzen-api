@@ -1,7 +1,7 @@
 import express from 'express';
 import { mongoose } from "../db.js";
-import tokenValidation from "../../middlewares/tokenValidation.js"
-import Transaction from '../../model/Transaction.js';
+import tokenValidation from "../middlewares/tokenValidation.js"
+import Transaction from '../model/Transaction.js';
 
 const router = express.Router();
 
