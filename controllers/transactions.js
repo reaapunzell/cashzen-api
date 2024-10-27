@@ -18,7 +18,6 @@ router.get("/:userId", tokenValidation, async (req, res) => {
     if(userTransactions.length === 0 ){
       res.status(404).send("no transactions found for this user")
     }
-    console.log(`fetching ${req.user.username}'s transactions`);
     res.json(userTransactions);
     
   } catch (err) {
