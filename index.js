@@ -20,7 +20,7 @@ app.use('/auth', router)
 app.use("/transactions", transactionsRouter)
 
 app.get('/', (req,res) => {
-    return res.status(200).json(sampleData);
+    return res.status(401).json({})
 })
 
 
