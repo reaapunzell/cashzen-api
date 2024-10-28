@@ -20,8 +20,9 @@ app.use('/auth', router)
 app.use("/transactions", transactionsRouter)
 
 app.get('/', (req,res) => {
-    res.send("hello world");
+    return res.status(200).json(sampleData);
 })
+
 
 
 app.listen(PORT, () =>{
