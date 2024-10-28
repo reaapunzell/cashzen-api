@@ -9,6 +9,7 @@ const SALT = Number(process.env.SALT)
 const JWT_KEY = process.env.JWT_KEY
 
 router.post('/register', async (req, res)=>{
+    console.log(`trying to register ${username}`)
     try{
         const { username, email, password} = req.body
         const newUser = new User({
@@ -19,8 +20,8 @@ router.post('/register', async (req, res)=>{
         await newUser.save()
         res.send(`new user ${req.body.username} created`)
     } catch (err){
-        console.log(err)
-        res.status(500).send(err)
+        console.error('Error during login:', error); 
+        res.status(500).send({ message: "Internal server error." });
     }
 })
 
