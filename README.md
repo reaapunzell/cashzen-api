@@ -3,8 +3,6 @@
 
 ### Backend README (`cashzen-api`)
 
-```markdown
-# Cashzen API - Backend
 
 Cashzen API is the backend for the Cashzen application, providing endpoints for managing user authentication, transaction data, and financial summaries. This Node.js and Express-based API connects to a MongoDB database to securely store and retrieve data. This is the backend repository for our project submission for FNB App Of The Year Hackathon 2024.
 View project [here](https://cashzen.onrender.com/)
